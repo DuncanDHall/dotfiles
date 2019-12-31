@@ -110,7 +110,7 @@ alias cd..="cs .."
 alias c="clear"
 alias e="exit"
 alias bpr="vim ~/.bash_profile"
-alias vrc="vim ~/.vimrc"
+alias vimrc="vim ~/.vimrc"
 # vim most recent – opens most recently edited file in current directory
 alias vmr='vim -- $(ls -t | head -n 1)'
 # reload .bash_profile
