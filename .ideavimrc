@@ -1,0 +1,9 @@
+set rnu
+set nu
+
+set softtabstop=4
+unmap <C-r>
+
+nnoremap <C-E> <C-E><C-E><C-E>
+nnoremap <C-Y> <C-Y><C-Y><C-Y>
+
