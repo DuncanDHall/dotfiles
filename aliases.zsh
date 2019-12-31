@@ -11,9 +11,9 @@ alias ww='cs /Users/duncanhall/Library/Mobile\ Documents/com\~apple\~CloudDocs/D
 alias "wj"="cs /Users/duncanhall/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/programming/journal"
 
 # fast editing
-alias zshrc='vim ~/dotfiles/.zshrc'
+alias zshconfig='vim ~/dotfiles/.zshrc'
 alias zshaliases='vim ~/dotfiles/aliases.zsh'
-alias vimrc='vim ~/dotfiles/.vimrc'
+alias vimconfig='vim ~/dotfiles/.vimrc'
 alias vmr='vim -- $(ls -t | head -n 1)'
 
 # python version selection
