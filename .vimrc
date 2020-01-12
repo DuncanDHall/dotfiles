@@ -110,27 +110,24 @@ inoremap <s-tab> <c-n>
 " https://github.com/garybernhardt/selecta
 
 
+
 "=== KEYMAPPINGS ===""
 let mapleader = ","
-
 " easier saving and closing
 map <C-W><C-W> :wq<CR>
-
-" shorcut to edit this file
-nmap <silent> <leader>vrc : e $MYVIMRC<CR>
-
 " vertical split faster
 map <leader>vs :vsplit<CR>
-
 " allow easier switching between frames
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
 " larger faster e/y scrolling
 nnoremap <C-E> <C-E><C-E><C-E>
 nnoremap <C-Y> <C-Y><C-Y><C-Y>
+
+
+
 
 "=== MISCELLANEOUS CONFIGURATIONS =="
 set laststatus=2

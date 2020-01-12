@@ -7,14 +7,15 @@ alias g='git'
 
 # navigation
 function cs () { cd $1 && ls; }
-alias wwork='cs /Users/duncanhall/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/programming/Python/the-coding-interview'
-alias wjournal='cs /Users/duncanhall/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/programming/journal'
-alias wdotfiles='cs ~/dotfiles'
+# alias wwork='cs /Users/duncanhall/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/programming/Python/the-coding-interview'
+# alias wjournal='cs /Users/duncanhall/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/programming/journal'
+# alias wdotfiles='cs ~/dotfiles'
 
 # fast editing
 alias zshconfig='vim ~/dotfiles/.zshrc'
 alias zshaliases='vim ~/dotfiles/ohmyzshcustom/aliases.zsh'
-alias vimconfig='vim ~/dotfiles/.vimrc'
+alias zshfunctions='vim ~/dotfiles/ohmyzshcustom/functions.zsh'
+alias vimrc='vim ~/dotfiles/.vimrc'
 alias vmr='vim -- $(ls -t | head -n 1)'
 
 # python version selection
@@ -29,4 +30,4 @@ alias c='clear'
 alias src='source ~/.zshrc ~/dotfiles/ohmyzshcustom/*.zsh'
 
 # adding macvim
-alias v='/Applications/MacVim.app/Contents/bin/vim'
+# alias v='/Applications/MacVim.app/Contents/bin/vim'
