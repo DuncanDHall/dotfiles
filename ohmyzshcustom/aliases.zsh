@@ -28,3 +28,5 @@ alias o='open .'
 alias c='clear'
 alias src='source ~/.zshrc ~/dotfiles/ohmyzshcustom/*.zsh'
 
+# adding macvim
+alias v='/Applications/MacVim.app/Contents/bin/vim'

@@ -11,6 +11,7 @@ export ZSH="/Users/duncanhall/.oh-my-zsh"
 # ZSH_THEME="wezm"
 # ZSH_THEME="nanotech"
 ZSH_THEME="my-minimal"
+# ZSH_THEME="typewritten"
 # ZSH_THEME="mh"
 # ZSH_THEME="avit"
 # ZSH_THEME="arrow"
@@ -114,4 +115,3 @@ source $ZSH/oh-my-zsh.sh
 
 # for fuck
 eval $(thefuck --alias)
-
