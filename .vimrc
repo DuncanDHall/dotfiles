@@ -2,6 +2,8 @@
 "=== PLUGINS ==="
 
 " Pathogen plugin manager (put em in ~/.vim/bundle)
+" To disable a plugin, add it's bundle name to the following list
+let g:pathogen_disabled = ['auto-pairs']
 execute pathogen#infect()
 
 " for auto-pairs: any closing bracket will force close any open
@@ -41,13 +43,15 @@ if has('gui_running')
     set guifont=Bitstream\ Vera\ Sans\ Mono:h13
 endif
 
+colorscheme spacegray
+
 " line number conf
 set relativenumber
 set number
 
 " overlength line highlighting
-highlight OverLength ctermbg=red ctermfg=white guibg=#ff9999
-match OverLength /\%81v.\+/
+" highlight OverLength ctermbg=red ctermfg=white guibg=#ff9999
+" match OverLength /\%81v.\+/
 
 " vsplit highlighting
 highlight VertSplit ctermfg=235 ctermbg=239
@@ -57,6 +61,10 @@ if $TERM_PROGRAM =~ "iTerm"
     let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
     let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
     let &t_SR = "\<esc>]50;CursorShape=2\x7" " Underline in replace mode
+else
+    let &t_SI.="\e[5 q" "SI = INSERT mode
+    let &t_SR.="\e[4 q" "SR = REPLACE mode
+    let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 endif
 
 
@@ -114,4 +122,7 @@ nnoremap <C-Y> <C-Y><C-Y><C-Y>
 "=== MISCELLANEOUS CONFIGURATIONS =="
 set laststatus=2
 set hidden
+
+" default to system clipboard
+set clipboard^=unnamed
 
