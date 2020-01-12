@@ -15,7 +15,6 @@ journal () {
     # if journal entry for this date exists:
     setopt NULL_GLOB
     for f in ./$d*(.); do
-        echo "$f"
         v "$f"
         return
     done

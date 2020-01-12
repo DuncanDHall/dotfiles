@@ -1,6 +1,5 @@
 
 "=== PLUGINS ==="
-
 " Pathogen plugin manager (put em in ~/.vim/bundle)
 " To disable a plugin, add it's bundle name to the following list
 let g:pathogen_disabled = ['auto-pairs']
@@ -94,7 +93,21 @@ set splitright
 set wildignore=*.swp,*.bak,*.pyc,*.class
 " undo more
 set undolevels=1000
-
+" MULTIPURPOSE TAB KEY
+" Indent if we're at the beginning of a line. Else, do completion.
+" https://medium.com/@sszreter/vim-tab-autocomplete-in-insert-mode-and-fuzzy-search-for-opening-files-484260f52618
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+inoremap <expr> <tab> InsertTabWrapper()
+inoremap <s-tab> <c-n>
+" TODO check out selecta for file opening if you want
+" https://github.com/garybernhardt/selecta
 
 
 "=== KEYMAPPINGS ===""
