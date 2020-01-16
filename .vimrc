@@ -2,7 +2,7 @@
 "=== PLUGINS ==="
 " Pathogen plugin manager (put em in ~/.vim/bundle)
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['auto-pairs']
+let g:pathogen_disabled = ['auto-pairs', 'python-mode']
 execute pathogen#infect()
 
 " for auto-pairs: any closing bracket will force close any open
@@ -33,6 +33,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+set omnifunc=syntaxcomplete#Complete
 
 
 "=== AESTHETICS ==="
