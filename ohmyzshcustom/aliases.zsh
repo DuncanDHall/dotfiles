@@ -1,4 +1,5 @@
-# ZSH aliases
+#  ZSH aliases
+#  by Duncan Hall
 
 # git
 alias gcam='git add -A; git commit -m'
@@ -28,6 +29,9 @@ alias v='vim'
 alias o='open .'
 alias c='clear'
 alias src='source ~/.zshrc ~/dotfiles/ohmyzshcustom/*.zsh'
+alias email='neomutt'
+alias mail='neomutt'
+alias lf="lfcd"  # lfcd cds to the directory on exit
 
 # adding macvim
 # alias v='/Applications/MacVim.app/Contents/bin/vim'
