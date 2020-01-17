@@ -31,7 +31,7 @@ alias c='clear'
 alias src='source ~/.zshrc ~/dotfiles/ohmyzshcustom/*.zsh'
 alias email='neomutt'
 alias mail='neomutt'
-alias lf="lfcd"  # lfcd cds to the directory on exit
+alias ff="lfcd"
 
 # adding macvim
 # alias v='/Applications/MacVim.app/Contents/bin/vim'
