@@ -17,3 +17,7 @@ LFCD="~/.config/lf/lfcd.sh"                            # pre-built binary
 if [ -f "$LFCD" ]; then
     source "$LFCD"
 fi
+
+# command history alterations
+unsetopt inc_append_history
+unsetopt share_history
