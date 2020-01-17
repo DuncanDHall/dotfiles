@@ -2,7 +2,7 @@
 "=== PLUGINS ==="
 " Pathogen plugin manager (put em in ~/.vim/bundle)
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['auto-pairs', 'python-mode']
+let g:pathogen_disabled = ['vim-jedi', 'auto-pairs', 'python-mode']
 execute pathogen#infect()
 
 " for auto-pairs: any closing bracket will force close any open
@@ -137,3 +137,9 @@ set hidden
 " default to system clipboard
 set clipboard^=unnamed
 
+" templating
+if has("autocmd")
+  augroup templates
+    autocmd BufNewFile test*.py 0r ~/.vim/templates/python-test.py
+  augroup END
+endif
