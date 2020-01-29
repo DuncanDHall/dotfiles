@@ -2,7 +2,7 @@
 "=== PLUGINS ==="
 " Pathogen plugin manager (put em in ~/.vim/bundle)
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['vim-jedi', 'auto-pairs', 'python-mode']
+let g:pathogen_disabled = ['jedi-vim', 'auto-pairs', 'python-mode']
 execute pathogen#infect()
 
 " for auto-pairs: any closing bracket will force close any open
