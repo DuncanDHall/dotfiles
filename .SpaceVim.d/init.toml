@@ -48,13 +48,16 @@
         'cursorpos',
         'percentage'
         ]
+    # get my leader key back
+    enable_language_specific_leader = false
 
 
 # Enable autocomplete layer
 [[layers]]
     name = 'autocomplete'
-    # auto-completion-return-key-behavior = "complete"
-    auto-completion-tab-key-behavior = "smart"
+    auto_completion_return_key_behavior = "smart"
+    auto_completion_tab_key_behavior = "cycle"
+    auto_completion_enable_snippets_in_popup= true
 
 [[layers]]
     name = 'shell'

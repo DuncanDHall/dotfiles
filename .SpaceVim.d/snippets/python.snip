@@ -1,0 +1,12 @@
+snippet     utest
+abbr        import unittest..
+    import unittest
+
+
+    class Test(unittest.TestCase):
+        def test_method(self):
+            self.assertEqual(True, False)
+
+
+    if __name__ == '__main__':
+        unittest.main(verbosity=2)
