@@ -13,11 +13,11 @@ function cs () { cd $1 && ls; }
 # alias wdotfiles='cs ~/dotfiles'
 
 # fast editing
-alias zshconfig='vim ~/dotfiles/.zshrc'
-alias zshaliases='vim ~/dotfiles/ohmyzshcustom/aliases.zsh'
-alias zshfunctions='vim ~/dotfiles/ohmyzshcustom/functions.zsh'
-alias vimrc='vim ~/dotfiles/.vimrc'
-alias vmr='vim -- $(ls -t | head -n 1)'
+alias zshconfig='nvim ~/dotfiles/.zshrc'
+alias zshaliases='nvim ~/dotfiles/ohmyzshcustom/aliases.zsh'
+alias zshfunctions='nvim ~/dotfiles/ohmyzshcustom/functions.zsh'
+alias vimrc='nvim ~/dotfiles/.vimrc'
+alias vmr='nvim -- $(ls -t | head -n 1)'
 
 # python version selection
 alias python='python3'
@@ -25,7 +25,7 @@ alias pip='pip3'
 alias ptd='python3 -m unittest discover -v'
 
 # miscelaneous
-alias v='vim'
+alias v='nvim'
 alias o='open .'
 alias c='clear'
 alias src='source ~/.zshrc ~/dotfiles/ohmyzshcustom/*.zsh'
