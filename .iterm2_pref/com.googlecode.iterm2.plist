@@ -6643,7 +6643,7 @@
 	<key>MaxVertically</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/dotfiles/.iterm2_pref</string>
+	<string>~/dotfiles/colors/nord-iterm2-0.2.0/src/xml</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -6694,7 +6694,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>299 322 841 470 0 0 1440 900 </string>
+	<string>11 419 799 448 0 0 1440 900 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 381 620 392 0 0 1440 900 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
@@ -6704,7 +6704,7 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>20 19 1402 864 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>473 0 570 452 0 0 1440 900 </string>
+	<string>38 0 1402 820 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 15</key>
 	<string>38 22 1402 864 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
@@ -7431,7 +7431,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 14</string>
+			<string>SauceCodeProNerdFontCompleteM-Medium 14</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -7509,7 +7509,7 @@
 			<key>Use Bright Bold</key>
 			<true/>
 			<key>Use Cursor Guide</key>
-			<true/>
+			<false/>
 			<key>Use Custom Window Title</key>
 			<true/>
 			<key>Use Italic Font</key>
@@ -8981,10 +8981,8 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Apple Braille</string>
-		<string>Andale Mono</string>
-		<string>Menlo</string>
 		<string>Monaco</string>
+		<string>SauceCodePro Nerd Font Mono</string>
 	</array>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
@@ -8998,7 +8996,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{263, 768}</string>
+		<string>{444, 800}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -9007,7 +9005,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>539C8736-A557-4CED-82F8-8D2142AC60CF</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>16</integer>
+	<integer>23</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -9782,7 +9780,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-27T13:02:52Z</date>
+	<date>2020-02-01T22:07:56Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
