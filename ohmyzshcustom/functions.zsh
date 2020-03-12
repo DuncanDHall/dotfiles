@@ -25,6 +25,16 @@ journal () {
     v "$d-$n.md"
 }
 
+# use imagemagick to convert all .HEIC files to .jpg in current directory
+heictojpg () {
+    for file in ./*HEIC
+    do
+        echo "processing '$file'..."
+        mogrify -format jpg "$file"
+    done
+    echo "done"
+}
+
 lfcd () {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
