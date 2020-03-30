@@ -33,5 +33,7 @@ alias email='neomutt'
 alias mail='neomutt'
 alias ff="lfcd"
 
+# run python scripts automatically on save with fswatch
+alias fswatchpy='fswatch -0 -o ./ | xargs -0 -n 1 python'
 # adding macvim
 # alias v='/Applications/MacVim.app/Contents/bin/vim'
