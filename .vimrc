@@ -115,9 +115,9 @@ inoremap <s-tab> <c-n>
 "=== KEYMAPPINGS ===""
 let mapleader = ","
 " easier saving and closing
-map <C-W><C-W> :wq<CR>
+noremap <C-W><C-W> :wq<CR>
 " vertical split faster
-map <leader>vs :vsplit<CR>
+noremap <leader>vs :vsplit<CR>
 " allow easier switching between frames
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>

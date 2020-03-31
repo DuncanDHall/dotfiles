@@ -48,3 +48,9 @@ lfcd () {
         fi
     fi
 }
+
+# run python scripts automatically on save with fswatch
+fswatchpy () {
+    fswatch -0 -o ./$1 | xargs -0 -n 1 python3 ./$1
+}
+# alias fswatchpy='fswatch -0 -o ./ | xargs -0 -n 1 python3'
