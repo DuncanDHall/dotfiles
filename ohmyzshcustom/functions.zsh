@@ -35,6 +35,7 @@ heictojpg () {
     echo "done"
 }
 
+# https://github.com/gokcehan/lf
 lfcd () {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"

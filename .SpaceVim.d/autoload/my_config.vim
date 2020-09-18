@@ -11,7 +11,7 @@ function! my_config#after() abort
     nnoremap <cr> :noh<CR>:<backspace>
     " minimum number of context lines above/below the cursor
     set scrolloff=3
-    " text wrapping
+    " gext wrapping
     set wrap linebreak
     " fix scrolling
     nnoremap <C-E> <C-E><C-E><C-E>
@@ -22,4 +22,7 @@ function! my_config#after() abort
     " two spaces to four for *.py files
     set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
     set autoindent shiftround smarttab
+
+
+    :let @/ = ""
 endfunction

@@ -57,12 +57,23 @@
     name = 'autocomplete'
     auto_completion_return_key_behavior = "smart"
     auto_completion_tab_key_behavior = "cycle"
-    auto_completion_enable_snippets_in_popup= true
+    auto_completion_enable_snippets_in_popup = true
 
 [[layers]]
     name = 'shell'
     default_position = 'top'
     default_height = 30
+
+[[layers]]
+    name = "colorscheme"
+
+[[layers]]
+    name = "denite"
+
+
+#############
+# Languages #
+#############
 
 [[layers]]
     name = "lang#python"
@@ -74,5 +85,5 @@
     ]
 
 [[layers]]
-    name = "colorscheme"
+    name = "lang#html"
 

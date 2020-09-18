@@ -2,10 +2,6 @@
 export PYTHONBREAKPOINT="pudb.set_trace"
 
 
-# for fuck
-eval $(thefuck --alias)
-
-
 # lf starts in the current directory and changes the working directory
 # accordingly when you move around. On the other hand, when you quit lf, the
 # launching shell remains in the starting directory. This is a limitation of
