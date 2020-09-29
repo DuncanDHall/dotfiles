@@ -80,6 +80,8 @@ plugins=(
     vi-mode
     autojump
     themes
+    virtualenv
+    virtualenvwrapper
 )
 # TODO add virtualenv virtualenvwrapper
 

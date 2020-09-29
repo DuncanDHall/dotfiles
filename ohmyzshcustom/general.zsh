@@ -1,5 +1,6 @@
 # Set breakpoint() in Python to call pudb
 export PYTHONBREAKPOINT="pudb.set_trace"
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
 
 
 # lf starts in the current directory and changes the working directory

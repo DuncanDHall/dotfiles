@@ -23,5 +23,5 @@ vcs_status() {
 }
 
 PROMPT='
-%{$fg[yellow]%}%B%#%{$fg[white]%}%b '
+%{$fg[green]%}(`basename $VIRTUAL_ENV`) %{$fg[yellow]%}%B%#%{$fg[white]%}%b '
 RPROMPT='%{$fg[blue]%}%2~ %{$reset_color%}$(vcs_status)'

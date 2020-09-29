@@ -31,7 +31,7 @@ alias c='clear'
 alias src='source ~/.zshrc ~/dotfiles/ohmyzshcustom/*.zsh'
 alias email='neomutt'
 alias mail='neomutt'
-alias ff="lfcd"
+# alias ff="lfcd"
 alias anki='anki-vim'
 
 # adding macvim
