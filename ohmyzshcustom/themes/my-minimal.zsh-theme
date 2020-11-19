@@ -1,27 +1,37 @@
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}%{$fg[white]%}["
-ZSH_THEME_GIT_PROMPT_SUFFIX=""
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%} %{$fg[white]%}]%{$reset_color%} "
-# ●
-ZSH_THEME_GIT_PROMPT_CLEAN="]%{$reset_color%} "
-ZSH_THEME_SVN_PROMPT_PREFIX=$ZSH_THEME_GIT_PROMPT_PREFIX
-ZSH_THEME_SVN_PROMPT_SUFFIX=$ZSH_THEME_GIT_PROMPT_SUFFIX
-ZSH_THEME_SVN_PROMPT_DIRTY=$ZSH_THEME_GIT_PROMPT_DIRTY
-ZSH_THEME_SVN_PROMPT_CLEAN=$ZSH_THEME_GIT_PROMPT_CLEAN
-ZSH_THEME_HG_PROMPT_PREFIX=$ZSH_THEME_GIT_PROMPT_PREFIX
-ZSH_THEME_HG_PROMPT_SUFFIX=$ZSH_THEME_GIT_PROMPT_SUFFIX
-ZSH_THEME_HG_PROMPT_DIRTY=$ZSH_THEME_GIT_PROMPT_DIRTY
-ZSH_THEME_HG_PROMPT_CLEAN=$ZSH_THEME_GIT_PROMPT_CLEAN
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[white]%}["
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[white]%}]"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%} "
+ZSH_THEME_GIT_PROMPT_CLEAN=""
 
-vcs_status() {
-    if [[ $(whence in_svn) != "" ]] && in_svn; then
-        svn_prompt_info
-    elif [[ $(whence in_hg) != "" ]] && in_hg; then
-        hg_prompt_info
-    else
-        git_prompt_info
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+ZSH_THEME_VIRTUAL_ENV_PROMPT_PREFIX="%{$fg[green]%}("
+ZSH_THEME_VIRTUAL_ENV_PROMPT_SUFFIX=")"
+
+
+function _git_prompt_info {
+    git_prompt_info
+}
+
+function _virtualenv_prompt_info() {
+    if [ -n "$VIRTUAL_ENV" ]; then
+        if [ -f "$VIRTUAL_ENV/__name__" ]; then
+            local name=`cat $VIRTUAL_ENV/__name__`
+        elif [ `basename $VIRTUAL_ENV` = "__" ]; then
+            local name=$(basename $(dirname $VIRTUAL_ENV))
+        else
+            local name=$(basename $VIRTUAL_ENV)
+        fi
+        echo "$ZSH_THEME_VIRTUAL_ENV_PROMPT_PREFIX$name$ZSH_THEME_VIRTUAL_ENV_PROMPT_SUFFIX "
     fi
 }
 
-PROMPT='
-%{$fg[green]%}(`basename $VIRTUAL_ENV`) %{$fg[yellow]%}%B%#%{$fg[white]%}%b '
-RPROMPT='%{$fg[blue]%}%2~ %{$reset_color%}$(vcs_status)'
+function _path_prompt_info() {
+    echo "%{$fg[blue]%}%2~ "
+}
+
+
+PROMPT="
+$(_virtualenv_prompt_info)%{$fg[yellow]%}%B%#%b "
+
+RPROMPT="$(_path_prompt_info)$(_git_prompt_info)%{$reset_colors%}%{$fg[white]%}"

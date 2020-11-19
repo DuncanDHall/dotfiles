@@ -6627,15 +6627,15 @@
 	<key>HideTabNumber</key>
 	<true/>
 	<key>Hotkey</key>
-	<false/>
+	<true/>
 	<key>HotkeyChar</key>
-	<integer>0</integer>
+	<integer>32</integer>
 	<key>HotkeyCode</key>
-	<integer>0</integer>
+	<integer>49</integer>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>HotkeyModifiers</key>
-	<integer>0</integer>
+	<integer>262401</integer>
 	<key>JobName</key>
 	<true/>
 	<key>LeftTabBarWidth</key>
@@ -6668,7 +6668,7 @@
 		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
 	</array>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>554</real>
+	<real>485</real>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -6706,9 +6706,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>522 192 796 486 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>11 33 1402 856 0 0 1440 900 </string>
+	<string>302 44 1138 856 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>38 0 1402 856 0 0 1440 900 </string>
+	<string>11 213 1402 856 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 15</key>
 	<string>38 22 1402 864 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
@@ -7459,26 +7459,26 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.80784314870834351</real>
+				<real>0.23137254901960785</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.7725490927696228</real>
+				<real>0.18431372549019609</real>
 				<key>Red Component</key>
-				<real>0.7529413104057312</real>
+				<real>0.16862745098039217</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.15821370482444763</real>
+				<real>0.18723404255319143</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.12494642287492752</real>
+				<real>0.55744680851063833</real>
 				<key>Red Component</key>
-				<real>0.1098216250538826</real>
+				<real>1</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -9004,7 +9004,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{214, 712}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -9013,7 +9013,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>539C8736-A557-4CED-82F8-8D2142AC60CF</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>73</integer>
+	<integer>74</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -9796,7 +9796,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-09-23T19:51:51Z</date>
+	<date>2020-10-16T14:53:45Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -9852,7 +9852,7 @@
 	<key>iTerm Version</key>
 	<string>3.3.12</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
-	<integer>2</integer>
+	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 </dict>

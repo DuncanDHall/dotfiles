@@ -6,8 +6,10 @@ alias gcam='git add -A; git commit -m'
 alias gs='git status'
 alias g='git'
 
-# navigation
-function cs () { cd $1 && ls; }
+# docker
+alias d='docker'
+alias dc='docker-compose'
+
 # alias wwork='cs /Users/duncanhall/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/programming/Python/the-coding-interview'
 # alias wjournal='cs /Users/duncanhall/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/programming/journal'
 # alias wdotfiles='cs ~/dotfiles'
@@ -33,6 +35,8 @@ alias email='neomutt'
 alias mail='neomutt'
 # alias ff="lfcd"
 alias anki='anki-vim'
+
+alias iassh='ssh researcher4.fnf.archive.org'
 
 # adding macvim
 # alias v='/Applications/MacVim.app/Contents/bin/vim'

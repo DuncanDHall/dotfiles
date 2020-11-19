@@ -1,4 +1,3 @@
-
 "=== PLUGINS ==="
 " Pathogen plugin manager (put em in ~/.vim/bundle)
 " To disable a plugin, add it's bundle name to the following list
@@ -139,7 +138,7 @@ set clipboard^=unnamed
 
 " templating
 if has("autocmd")
-  augroup templates
+augroup templates
     autocmd BufNewFile test*.py 0r ~/.vim/templates/python-test.py
-  augroup END
+augroup END
 endif
