@@ -35,3 +35,4 @@ PROMPT="
 $(_virtualenv_prompt_info)%{$fg[yellow]%}%B%#%b "
 
 RPROMPT="$(_path_prompt_info)$(_git_prompt_info)%{$reset_colors%}%{$fg[white]%}"
+
